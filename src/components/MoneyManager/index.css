@@ -1,0 +1,140 @@
+/* Write your CSS here */
+* {
+  font-family: Roboto;
+}
+.money-manager-bg-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.responsive-container {
+  /* border: 1px solid red; */
+  width: 90%;
+}
+.header {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  min-height: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  padding-left: 26px;
+  margin-top: 10px;
+}
+
+.header-name {
+  font-size: 20px;
+  color: #1e293b;
+}
+.header-greeting {
+  font-size: 12px;
+  color: #475569;
+}
+
+.app-name {
+  font-size: 14px;
+  color: #0b69ff;
+  font-weight: 500;
+}
+
+.money-details-container {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.add-transaction-container {
+  border: 2px solid #d7dfe9;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 30px;
+  padding: 20px;
+  padding-right: 30px;
+  margin-right: 40px;
+}
+.transaction-heading {
+  font-size: 18px;
+}
+.input-element {
+  font-size: 12px;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #d7dfe9;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+.label-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #7e858e;
+}
+
+.add-button {
+  margin-top: 10px;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: none;
+  color: #ffffff;
+  background-color: #0b69ff;
+  cursor: pointer;
+}
+
+.history-container {
+  border: 2px solid #d7dfe9;
+  border-radius: 10px;
+  width: 380px;
+  height: 350px;
+  margin-bottom: 30px;
+  padding: 20px;
+  padding-right: 30px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.history-details-titles-container {
+  border: 2px solid #d7dfe9;
+  height: 40px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.history-details {
+  list-style-type: none;
+  display: flex;
+  padding-left: 10px;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 0px;
+}
+.history-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 150px;
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+  .money-details-container {
+    justify-content: space-between;
+  }
+  .transaction-container {
+    display: flex;
+  }
+}
+
+.transaction-item-container {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
